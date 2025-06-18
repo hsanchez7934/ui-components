@@ -264,12 +264,14 @@ const renderedBtns = (btns: Btns[]) => {
 export default function ButtonsPage() {
 	return (
 		<main className="min-h-screen pt-20 bg-white dark:bg-black flex flex-col items-center justify-center">
-			{renderedBtns(primaryBtns)}
-			{renderedBtns(secondaryButtons)}
-			{renderedBtns(tertiaryButtons)}
-			{renderedBtns(linkcolorButtons)}
-			{renderedBtns(linkgrayButtons)}
-			{renderedBtns(destructiveButtons)}
+			<div className="h-auto">
+				{renderedBtns(primaryBtns)}
+				{renderedBtns(secondaryButtons)}
+				{renderedBtns(tertiaryButtons)}
+				{renderedBtns(linkcolorButtons)}
+				{renderedBtns(linkgrayButtons)}
+				{renderedBtns(destructiveButtons)}
+			</div>
 		</main>
 	)
 }
