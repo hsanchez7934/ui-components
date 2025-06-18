@@ -237,21 +237,8 @@ const destructiveButtons = [
 	}
 ]
 
-const renderedBtns = (
-	btns: {
-		buttonType: string
-		buttonSize: string
-		buttonText: string
-		ariaLabel: string
-		textColor?: string
-		iconCenter?: React.ReactElement | SVGElement | Element
-		iconLeft?: React.ReactElement | SVGElement | Element
-		iconRight?: React.ReactElement | SVGElement | Element
-		iconPlacement?: string
-		btnDisabledState?: boolean
-	}[]
-) => {
-	const buttonsToRender = btns.map((btn, index) => {
+const renderedBtns = (btns: any) => {
+	const buttonsToRender = btns.map((btn: any, index: number) => {
 		return (
 			<div key={index} className="inline-block">
 				<Button {...btn} btnDisabledState={index === 3 ? true : false} />

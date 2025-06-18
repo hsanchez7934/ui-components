@@ -160,6 +160,7 @@ export default function Button(props: Props) {
 		let markup = <></>
 		const condition = (iconPlacement === 'left' || iconPlacement === 'both') && iconLeft
 		if (condition) {
+			// @ts-expect-error generic
 			markup = iconLeft
 		}
 		return markup
@@ -169,6 +170,7 @@ export default function Button(props: Props) {
 		let markup = <></>
 		const condition = (iconPlacement === 'right' || iconPlacement === 'both') && iconRight
 		if (condition) {
+			// @ts-expect-error generic
 			markup = iconRight
 		}
 		return markup
