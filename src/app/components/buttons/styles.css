@@ -76,7 +76,6 @@ button:focus {
 .tertiaryBtnStyles {
 	border: none;
 	color: #4338ca;
-    /* background-color: inherit; */
 }
 
 .tertiaryBtnStyles:disabled {

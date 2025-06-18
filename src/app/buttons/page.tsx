@@ -244,6 +244,11 @@ const renderedBtns = (
 		buttonText: string
 		ariaLabel: string
 		textColor?: string
+		iconCenter?: React.ReactElement | SVGElement | Element
+		iconLeft?: React.ReactElement | SVGElement | Element
+		iconRight?: React.ReactElement | SVGElement | Element
+		iconPlacement?: string
+		btnDisabledState?: boolean
 	}[]
 ) => {
 	const buttonsToRender = btns.map((btn, index) => {
