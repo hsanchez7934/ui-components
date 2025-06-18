@@ -1,6 +1,6 @@
 'use client'
 
-import {ReactElement} from 'react'
+import {ReactNode} from 'react'
 import clsx from 'clsx'
 import './styles.css'
 
@@ -134,9 +134,9 @@ interface Props {
 	buttonSize: string | 'small' | 'medium' | 'large' | 'xl'
 	buttonText?: string
 	iconPlacement?: string | 'right' | 'left' | 'both'
-	iconLeft?: ReactElement | SVGElement | Element
-	iconRight?: ReactElement | SVGElement | Element
-	iconCenter?: ReactElement | SVGElement | Element
+	iconLeft?: ReactNode
+	iconRight?: ReactNode
+	iconCenter?: ReactNode
 	classes?: string
 	ariaLabel: string
 	btnDisabledState?: boolean
