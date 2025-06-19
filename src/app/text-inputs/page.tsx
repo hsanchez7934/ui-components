@@ -45,9 +45,9 @@ const inputsList = [
 		errorText: ''
 	},
 	{
-		labelText: 'Number',
-		inputType: 'number',
-		placeholderText: 'Enter number...',
+		labelText: 'Email',
+		inputType: 'email',
+		placeholderText: 'name@email.com',
 		hintText: '',
 		errorText: 'This is an error message.',
 		inputSize: 'small',

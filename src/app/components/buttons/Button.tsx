@@ -136,6 +136,7 @@ interface Props {
 	classes?: string
 	ariaLabel: string
 	btnDisabledState?: boolean
+	onClick?: () => void
 }
 
 export default function Button(props: Props) {
@@ -149,7 +150,8 @@ export default function Button(props: Props) {
 		classes,
 		ariaLabel,
 		iconCenter,
-		btnDisabledState
+		btnDisabledState,
+		onClick
 	} = props
 
 	const renderedLeftIcon = () => {
@@ -202,6 +204,7 @@ export default function Button(props: Props) {
 			className={`inline-flex ${getButtonTextSize(buttonSize)} ${getButtonSize(buttonSize)} ${getButtonColor(buttonType)} ${getButtonHoverStyles(buttonType)} ${getButtonClass(buttonType)} ${clsx(classes)}`}
 			aria-label={ariaLabel}
 			disabled={btnDisabledState || false}
+			onClick={onClick}
 		>
 			{renderedLeftIcon()}
 			{buttonText || ''}

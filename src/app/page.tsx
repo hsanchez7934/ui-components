@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Button from '@/app/components/buttons/Button'
+
 export default function Home() {
 	return (
 		<main className="h-screen pt-20">
@@ -15,8 +18,15 @@ export default function Home() {
 					Here we will preview a collection of reusable components built using React & TailwindCSS.
 					Click the button below to get started.
 				</p>
-				<div>
-					<button>Get Started</button>
+				<div className='mt-8'>
+					<Link href="/buttons">
+						<Button
+							buttonType="primary"
+							buttonText="Get Started"
+							buttonSize="large"
+							ariaLabel="Get Started button"
+						/>
+					</Link>
 				</div>
 			</section>
 		</main>
