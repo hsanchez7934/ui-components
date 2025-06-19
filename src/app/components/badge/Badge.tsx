@@ -7,7 +7,7 @@ interface Props {
 	badgeSize: string | 'small' | 'medium' | 'large'
 	badgeType: string | 'neutral' | 'error' | 'success' | 'warning' | 'brand'
 	badgeText: string
-    classes?: string
+	classes?: string
 }
 
 export default function Badge(props: Props) {
@@ -42,7 +42,9 @@ export default function Badge(props: Props) {
 	}
 
 	return (
-		<div className={`badge ${getBadgeSize(badgeSize)} ${getBadgeColor(badgeType)} ${clsx(props?.classes)}`}>
+		<div
+			className={`badge ${getBadgeSize(badgeSize)} ${getBadgeColor(badgeType)} ${clsx(props?.classes)}`}
+		>
 			<span>{badgeText}</span>
 		</div>
 	)

@@ -37,29 +37,29 @@
 }
 
 @media (min-width: 2000px) {
-    .badge_size_sm {
-        /* Define unique properties for size="sm". */
-        height: 75px;
-        width: auto;
-        font-size: 24px;
-        padding: 0 15px;
-    }
-    
-    .badge_size_md {
-        /* Define unique properties for size="md". */
-        height: 95px;
-        width: auto;
-        font-size: 34px;
-        padding: 0 25px;
-    }
-    
-    .badge_size_lg {
-        /* Define unique properties for size="lg". */
-        height: 105px;
-        width: auto;
-        font-size: 44px;
-        padding: 0 35px;
-    }
+	.badge_size_sm {
+		/* Define unique properties for size="sm". */
+		height: 75px;
+		width: auto;
+		font-size: 24px;
+		padding: 0 15px;
+	}
+
+	.badge_size_md {
+		/* Define unique properties for size="md". */
+		height: 95px;
+		width: auto;
+		font-size: 34px;
+		padding: 0 25px;
+	}
+
+	.badge_size_lg {
+		/* Define unique properties for size="lg". */
+		height: 105px;
+		width: auto;
+		font-size: 44px;
+		padding: 0 35px;
+	}
 }
 
 /* Color classes */

@@ -111,7 +111,7 @@ export default function BadgesPage() {
 
 	return (
 		<main className="min-h-screen pt-20 bg-white dark:bg-black flex flex-col items-center justify-center">
-			<div className="h-auto">
+			<div className="h-auto" style={{borderRadius: '12px'}}>
 				{renderedBadges(successBadges)}
 				{renderedBadges(warningBadges)}
 				{renderedBadges(dangerBadges)}
