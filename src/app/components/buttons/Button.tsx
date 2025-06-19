@@ -122,16 +122,12 @@ const getLinkBtnSize = (key: string) => {
 	}
 }
 
+type ButtonType = 'primary' | 'secondary' | 'tertiary' | 'destructive' | 'linkcolor' | 'linkgray'
+type ButtonSize = 'small' | 'medium' | 'large' | 'xl'
+
 interface Props {
-	buttonType:
-		| string
-		| 'primary'
-		| 'secondary'
-		| 'tertiary'
-		| 'linkcolor'
-		| 'linkgray'
-		| 'destructive'
-	buttonSize: string | 'small' | 'medium' | 'large' | 'xl'
+	buttonType: ButtonType
+	buttonSize: ButtonSize
 	buttonText?: string
 	iconPlacement?: string | 'right' | 'left' | 'both'
 	iconLeft?: ReactNode

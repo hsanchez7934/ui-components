@@ -7,21 +7,21 @@ import Link from 'next/link'
 
 import {useState} from 'react'
 
-const links = ['Buttons']
+const links = [{href: '/buttons', text: 'Buttons'}, {href: '/text-inputs', text: 'Text Inputs'}]
 
 const renderedLinks = (setToggleNavMenu: (value: boolean) => void) => {
-	return links.map((link: string) => {
+	return links.map((link: {href: string; text: string}) => {
 		return (
 			<div
-				key={link}
+				key={link.text}
 				className="w-full h-[50px] flex items-center justify-star"
 				onClick={() => setToggleNavMenu(false)}
 			>
 				<Link
-					href={'/buttons'}
+					href={link.href}
 					className="h-full w-full text-2xl flex items-center pl-6 text-black dark:text-white hover:bg-gray-400"
 				>
-					{link}
+					{link.text}
 				</Link>
 			</div>
 		)

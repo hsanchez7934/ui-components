@@ -237,9 +237,12 @@ const destructiveButtons = [
 	}
 ]
 
+type ButtonType = 'primary' | 'secondary' | 'tertiary' | 'destructive' | 'linkcolor' | 'linkgray'
+type ButtonSize = 'small' | 'medium' | 'large' | 'xl'
+
 type Btns = {
-	buttonType: string
-	buttonSize: string
+	buttonType: ButtonType
+	buttonSize: ButtonSize
 	buttonText?: string
 	iconPlacement?: string
 	iconLeft?: React.ReactElement
