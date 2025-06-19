@@ -1,6 +1,5 @@
 'use client'
 
-import { useId } from 'react'
 import Badge from '@/app/components/badge/Badge'
 
 const neutralBadges = [
