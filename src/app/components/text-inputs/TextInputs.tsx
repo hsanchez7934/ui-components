@@ -21,6 +21,7 @@ import {ReactNode} from 'react'
 // Creating the focus state involves using a box-shadow:
 
 type InputType =
+	| string
 	| 'button'
 	| 'checkbox'
 	| 'color'
@@ -44,9 +45,9 @@ type InputType =
 	| 'url'
 	| 'week'
 
-type AutoComplete = 'on' | 'off'
+type AutoComplete = string | 'on' | 'off'
 
-type InputSize = 'small' | 'medium' | 'large'
+type InputSize = string | 'small' | 'medium' | 'large'
 
 interface Props {
 	title: string
@@ -58,7 +59,7 @@ interface Props {
 	hintText: string
 	iconRight?: ReactNode
 	iconLeft?: ReactNode
-	iconPlacement?: 'left' | 'right' | 'both'
+	iconPlacement?: string | 'left' | 'right' | 'both'
 	errorText: string
 	acceptAttr?: string
 	altAttr?: string

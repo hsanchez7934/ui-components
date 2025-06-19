@@ -13,7 +13,8 @@ const inputsList = [
 		inputID: 'email1',
 		iconLeft: <RiMailLine />,
 		iconRight: <RiQuestionLine />,
-		classes: 'inputFocusNormal'
+		classes: 'inputFocusNormal',
+		errorText: ''
 	},
 	{
 		labelText: 'Password',
@@ -25,7 +26,8 @@ const inputsList = [
 		labelForID: 'password1',
 		inputID: 'password1',
 		iconRight: <RiQuestionLine />,
-		classes: 'inputFocusNormal'
+		classes: 'inputFocusNormal',
+		errorText: ''
 	},
 	{
 		labelText: 'Email',
@@ -39,12 +41,14 @@ const inputsList = [
 		iconLeft: <RiMailLine />,
 		iconRight: <RiQuestionLine />,
 		disabledState: true,
-		classes: 'inputFocusNormal'
+		classes: 'inputFocusNormal',
+		errorText: ''
 	},
 	{
 		labelText: 'Number',
 		inputType: 'number',
 		placeholderText: 'Enter number...',
+		hintText: '',
 		errorText: 'This is an error message.',
 		inputSize: 'small',
 		title: 'Input Title',
