@@ -237,8 +237,8 @@ const destructiveButtons = [
 	}
 ]
 
-type ButtonType = 'primary' | 'secondary' | 'tertiary' | 'destructive' | 'linkcolor' | 'linkgray'
-type ButtonSize = 'small' | 'medium' | 'large' | 'xl'
+type ButtonType = string | 'primary' | 'secondary' | 'tertiary' | 'destructive' | 'linkcolor' | 'linkgray'
+type ButtonSize = string | 'small' | 'medium' | 'large' | 'xl'
 
 type Btns = {
 	buttonType: ButtonType
