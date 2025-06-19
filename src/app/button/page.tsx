@@ -1,7 +1,7 @@
 'use client'
 
 import {RiStarSLine} from 'react-icons/ri'
-import Button from '../components/buttons/Button'
+import Button from '../components/button/Button'
 
 const primaryBtns = [
 	{

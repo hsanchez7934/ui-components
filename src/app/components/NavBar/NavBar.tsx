@@ -7,7 +7,11 @@ import Link from 'next/link'
 
 import {useState} from 'react'
 
-const links = [{href: '/buttons', text: 'Buttons'}, {href: '/text-inputs', text: 'Text Inputs'}]
+const links = [
+	{href: '/badge', text: 'Badge'},
+	{href: '/button', text: 'Button'},
+	{href: '/text-input', text: 'Text Input'}
+]
 
 const renderedLinks = (setToggleNavMenu: (value: boolean) => void) => {
 	return links.map((link: {href: string; text: string}) => {
@@ -46,7 +50,9 @@ export default function NavBar() {
 				</IconButton>
 			</div>
 			<div className="flex w-[50%] items-center justify-end pr-6 text-xl">
-				<Link href={'/'} style={{fontFamily: 'Rubik'}}>UI Components</Link>
+				<Link href={'/'} style={{fontFamily: 'Rubik'}}>
+					UI Components
+				</Link>
 			</div>
 			<div
 				className={`h-screen w-full absolute flex top-0 left-0 ${toggleNavManu ? 'showMenu' : 'hideMenu'}`}

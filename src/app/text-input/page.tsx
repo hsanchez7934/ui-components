@@ -1,4 +1,4 @@
-import TextInputs from '../components/text-inputs/TextInputs'
+import TextInputs from '../components/text-input/TextInputs'
 import {RiMailLine, RiQuestionLine} from 'react-icons/ri'
 
 const inputsList = [

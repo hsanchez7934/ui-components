@@ -1,3 +1,5 @@
+'use client'
+
 import clsx from 'clsx'
 import './styles.css'
 import {ReactNode} from 'react'
