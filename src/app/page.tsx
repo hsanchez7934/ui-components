@@ -19,7 +19,7 @@ export default function Home() {
 					Click the button below to get started.
 				</p>
 				<div className='mt-14'>
-					<Link href="/buttons">
+					<Link href="/button">
 						<Button
 							buttonType="primary"
 							buttonText="Get Started"

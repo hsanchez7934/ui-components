@@ -10,7 +10,8 @@ import {useState} from 'react'
 const links = [
 	{href: '/badge', text: 'Badge'},
 	{href: '/button', text: 'Button'},
-	{href: '/text-input', text: 'Text Input'}
+	{href: '/text-input', text: 'Text Input'},
+	{href: '/checkbox', text: 'Checkbox'}
 ]
 
 const renderedLinks = (setToggleNavMenu: (value: boolean) => void) => {

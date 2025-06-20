@@ -1,0 +1,7 @@
+input {
+	border-radius: 35px;
+}
+
+input:checked {
+	background-color: #4f46e5;
+}
