@@ -31,6 +31,7 @@ export default function DropDown(props: Props) {
 			setDisabledState(true)
 		}
 		window.onclick = (event: MouseEvent) => {
+			// @ts-expect-error generic
 			if (!event.target?.matches('.clickable')) {
 				if (focusState) {
 					setFocusState(false)
