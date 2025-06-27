@@ -1,6 +1,7 @@
 'use client'
 
 import Badge from '@/app/components/badge/Badge'
+import PageMainBox from '../components/page-main-box/PageMainBox'
 
 const neutralBadges = [
 	{
@@ -110,14 +111,12 @@ export default function BadgesPage() {
 	}
 
 	return (
-		<main className="min-h-screen pt-20 bg-white dark:bg-black flex flex-col items-center justify-center">
-			<div className="h-auto" style={{borderRadius: '12px'}}>
-				{renderedBadges(successBadges)}
+		<PageMainBox>
+			{renderedBadges(successBadges)}
 				{renderedBadges(warningBadges)}
 				{renderedBadges(dangerBadges)}
 				{renderedBadges(neutralBadges)}
 				{renderedBadges(brandBadges)}
-			</div>
-		</main>
+		</PageMainBox>
 	)
 }

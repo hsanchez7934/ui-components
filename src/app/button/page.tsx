@@ -2,6 +2,7 @@
 
 import {RiStarSLine} from 'react-icons/ri'
 import Button from '../components/button/Button'
+import PageMainBox from '../components/page-main-box/PageMainBox'
 
 const primaryBtns = [
 	{
@@ -237,7 +238,14 @@ const destructiveButtons = [
 	}
 ]
 
-type ButtonType = string | 'primary' | 'secondary' | 'tertiary' | 'destructive' | 'linkcolor' | 'linkgray'
+type ButtonType =
+	| string
+	| 'primary'
+	| 'secondary'
+	| 'tertiary'
+	| 'destructive'
+	| 'linkcolor'
+	| 'linkgray'
 type ButtonSize = string | 'small' | 'medium' | 'large' | 'xl'
 
 type Btns = {
@@ -266,15 +274,13 @@ const renderedBtns = (btns: Btns[]) => {
 
 export default function ButtonsPage() {
 	return (
-		<main className="min-h-screen pt-20 bg-white dark:bg-black flex flex-col items-center justify-center">
-			<div className="h-auto">
-				{renderedBtns(primaryBtns)}
-				{renderedBtns(secondaryButtons)}
-				{renderedBtns(tertiaryButtons)}
-				{renderedBtns(linkcolorButtons)}
-				{renderedBtns(linkgrayButtons)}
-				{renderedBtns(destructiveButtons)}
-			</div>
-		</main>
+		<PageMainBox>
+			{renderedBtns(primaryBtns)}
+			{renderedBtns(secondaryButtons)}
+			{renderedBtns(tertiaryButtons)}
+			{renderedBtns(linkcolorButtons)}
+			{renderedBtns(linkgrayButtons)}
+			{renderedBtns(destructiveButtons)}
+		</PageMainBox>
 	)
 }

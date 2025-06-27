@@ -1,3 +1,4 @@
+import PageMainBox from '../components/page-main-box/PageMainBox'
 import TextInputs from '../components/text-input/TextInputs'
 import {RiMailLine, RiQuestionLine} from 'react-icons/ri'
 
@@ -71,9 +72,5 @@ export default function TextInputsPage() {
 		})
 	}
 
-	return (
-		<main className="min-h-screen pt-20 bg-white dark:bg-black flex flex-col items-center justify-center">
-			<div className="h-auto">{renderedInputListItem()}</div>
-		</main>
-	)
+	return <PageMainBox>{renderedInputListItem()}</PageMainBox>
 }

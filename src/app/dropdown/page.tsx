@@ -1,0 +1,124 @@
+'use client'
+
+import PageMainBox from '../components/page-main-box/PageMainBox'
+import DropDown from '../components/dropdown/Dropdown'
+import { FaAddressBook } from 'react-icons/fa6'
+import { PiBowlFood } from "react-icons/pi";
+import {faker} from '@faker-js/faker'
+import { MdAirplanemodeActive } from "react-icons/md";
+import { MdOutlinePayment } from "react-icons/md";
+import { GiCommercialAirplane } from "react-icons/gi";
+
+export default function DropDownPage() {
+	const airlineData = () => {
+		const data = []
+		for (let i = 0; i < 10; i++) {
+			data.push({
+				value: faker.airline.airport().iataCode
+			})
+		}
+		return data
+	}
+
+	const employesData = () => {
+		const data = []
+		for (let i = 0; i < 10; i++) {
+			data.push({
+				value: faker.person.fullName()
+			})
+		}
+		return data
+	}
+
+	const foodData = () => {
+		const data = []
+		for (let i = 0; i < 10; i++) {
+			data.push({
+				value: faker.food.dish()
+			})
+		}
+		return data
+	}
+
+	const paymentIssuerData = () => {
+		const data = []
+		for (let i = 0; i < 5; i++) {
+			data.push({
+				value: faker.finance.creditCardIssuer()
+			})
+		}
+		return data
+	}
+
+	const loremIpsumData = () => {
+		const data = []
+		for (let i = 0; i < 10; i++) {
+			data.push({
+				value: faker.lorem.sentence()
+			})
+		}
+		return data
+	}
+
+	const renderedMenus = () => {
+		airlineData()
+		const menus = [
+			{
+				width: 250,
+				height: 40,
+				iconLeft: <MdAirplanemodeActive className='clickable' />,
+				data: airlineData(),
+				bgColor: 'bg-sky-200',
+				bgColorHover: 'hover:bg-sky-300',
+			},
+			{
+				width: 275,
+				height: 45,
+				bgColor: 'bg-red-200',
+				bgColorHover: 'hover:bg-red-300',
+				iconLeft: <FaAddressBook className='clickable' />,
+				data: employesData(),
+			},
+			{
+				width: 300,
+				height: 50,
+				bgColor: 'bg-yellow-200',
+				bgColorHover: 'hover:bg-yellow-300',
+				iconLeft: <PiBowlFood className='clickable' />,
+				data: foodData()
+			},
+			{
+				width: 325,
+				height: 50,
+				bgColor: 'bg-indigo-200',
+				bgColorHover: 'hover:bg-indigo-300',
+				iconLeft: <MdOutlinePayment className='clickable' />,
+				data: paymentIssuerData()
+			},
+			{
+				width: 350,
+				height: 50,
+				bgColor: 'bg-green-200',
+				bgColorHover: 'hover:bg-green-300',
+				data: loremIpsumData()
+			},
+			{
+				width: 250,
+				height: 40,
+				iconLeft: <GiCommercialAirplane className='clickable' />,
+				data: [{value: faker.airline.airline().name}],
+				isDisabled: true
+			}
+		]
+
+		return menus.map((menu, index) => {
+			return (
+				<div key={index} className='mb-10'>
+					<DropDown key={index} {...menu} />
+				</div>
+			)
+		})
+	}
+
+	return <PageMainBox>{renderedMenus()}</PageMainBox>
+}
