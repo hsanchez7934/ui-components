@@ -6,7 +6,7 @@ import { FaAddressBook } from 'react-icons/fa6'
 import { PiBowlFood } from "react-icons/pi";
 import {faker} from '@faker-js/faker'
 import { MdAirplanemodeActive } from "react-icons/md";
-import { MdOutlinePayment } from "react-icons/md";
+import { PiBird } from "react-icons/pi";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { IoPerson } from "react-icons/io5";
 
@@ -42,11 +42,11 @@ export default function DropDownPage() {
 		return data
 	}
 
-	const paymentIssuerData = () => {
+	const birdSpeciesData = () => {
 		const data = []
 		for (let i = 0; i < 5; i++) {
 			data.push({
-				value: faker.finance.creditCardIssuer()
+				value: faker.animal.bird()
 			})
 		}
 		return data
@@ -73,7 +73,9 @@ export default function DropDownPage() {
 				bgColor: 'bg-sky-200',
 				bgColorHover: 'hover:bg-sky-300',
 				textColorLightMode: 'text-black',
-				textColorDarkMode: 'dark:text-black'
+				textColorDarkMode: 'dark:text-black',
+				textColorHoverLightMode: 'text-black',
+				textColorHoverDarkMode: 'dark:hover:text-black'
 			},
 			{
 				width: 275,
@@ -83,7 +85,9 @@ export default function DropDownPage() {
 				iconLeft: <FaAddressBook className='clickable' />,
 				data: employesData(),
 				textColorLightMode: 'text-black',
-				textColorDarkMode: 'dark:text-black'
+				textColorDarkMode: 'dark:text-black',
+				textColorHoverLightMode: 'text-black',
+				textColorHoverDarkMode: 'dark:hover:text-black'
 			},
 			{
 				width: 300,
@@ -93,17 +97,21 @@ export default function DropDownPage() {
 				iconLeft: <PiBowlFood className='clickable' />,
 				data: foodData(),
 				textColorLightMode: 'text-black',
-				textColorDarkMode: 'dark:text-black'
+				textColorDarkMode: 'dark:text-black',
+				textColorHoverLightMode: 'text-black',
+				textColorHoverDarkMode: 'dark:hover:text-black'
 			},
 			{
 				width: 325,
 				height: 50,
 				bgColor: 'bg-indigo-200',
 				bgColorHover: 'hover:bg-indigo-300',
-				iconLeft: <MdOutlinePayment className='clickable' />,
-				data: paymentIssuerData(),
+				iconLeft: <PiBird className='clickable' />,
+				data: birdSpeciesData(),
 				textColorLightMode: 'text-black',
-				textColorDarkMode: 'dark:text-black'
+				textColorDarkMode: 'dark:text-black',
+				textColorHoverLightMode: 'text-black',
+				textColorHoverDarkMode: 'dark:hover:text-black'
 			},
 			{
 				width: 350,
@@ -112,7 +120,9 @@ export default function DropDownPage() {
 				bgColorHover: 'hover:bg-green-300',
 				data: loremIpsumData(),
 				textColorLightMode: 'text-black',
-				textColorDarkMode: 'dark:text-black'
+				textColorDarkMode: 'dark:text-black',
+				textColorHoverLightMode: 'text-black',
+				textColorHoverDarkMode: 'dark:hover:text-black'
 			},
 			{
 				width: 250,
