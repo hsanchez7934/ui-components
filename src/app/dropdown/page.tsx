@@ -8,6 +8,7 @@ import {faker} from '@faker-js/faker'
 import { MdAirplanemodeActive } from "react-icons/md";
 import { MdOutlinePayment } from "react-icons/md";
 import { GiCommercialAirplane } from "react-icons/gi";
+import { IoPerson } from "react-icons/io5";
 
 export default function DropDownPage() {
 	const airlineData = () => {
@@ -24,7 +25,8 @@ export default function DropDownPage() {
 		const data = []
 		for (let i = 0; i < 10; i++) {
 			data.push({
-				value: faker.person.fullName()
+				value: faker.person.fullName(),
+				iconLeft: <IoPerson className='clickable text-black dark:text-black mr-1.5' />
 			})
 		}
 		return data
@@ -70,6 +72,8 @@ export default function DropDownPage() {
 				data: airlineData(),
 				bgColor: 'bg-sky-200',
 				bgColorHover: 'hover:bg-sky-300',
+				textColorLightMode: 'text-black',
+				textColorDarkMode: 'dark:text-black'
 			},
 			{
 				width: 275,
@@ -78,6 +82,8 @@ export default function DropDownPage() {
 				bgColorHover: 'hover:bg-red-300',
 				iconLeft: <FaAddressBook className='clickable' />,
 				data: employesData(),
+				textColorLightMode: 'text-black',
+				textColorDarkMode: 'dark:text-black'
 			},
 			{
 				width: 300,
@@ -85,7 +91,9 @@ export default function DropDownPage() {
 				bgColor: 'bg-yellow-200',
 				bgColorHover: 'hover:bg-yellow-300',
 				iconLeft: <PiBowlFood className='clickable' />,
-				data: foodData()
+				data: foodData(),
+				textColorLightMode: 'text-black',
+				textColorDarkMode: 'dark:text-black'
 			},
 			{
 				width: 325,
@@ -93,14 +101,18 @@ export default function DropDownPage() {
 				bgColor: 'bg-indigo-200',
 				bgColorHover: 'hover:bg-indigo-300',
 				iconLeft: <MdOutlinePayment className='clickable' />,
-				data: paymentIssuerData()
+				data: paymentIssuerData(),
+				textColorLightMode: 'text-black',
+				textColorDarkMode: 'dark:text-black'
 			},
 			{
 				width: 350,
 				height: 50,
 				bgColor: 'bg-green-200',
 				bgColorHover: 'hover:bg-green-300',
-				data: loremIpsumData()
+				data: loremIpsumData(),
+				textColorLightMode: 'text-black',
+				textColorDarkMode: 'dark:text-black'
 			},
 			{
 				width: 250,

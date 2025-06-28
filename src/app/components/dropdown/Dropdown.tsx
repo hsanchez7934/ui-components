@@ -3,6 +3,7 @@
 import './styles.css'
 import {ReactNode, useEffect} from 'react'
 import {FaAngleDown} from 'react-icons/fa6'
+import {IoIosCheckmarkCircle} from 'react-icons/io'
 import React from 'react'
 import clsx from 'clsx'
 
@@ -17,6 +18,10 @@ interface Props {
 	classes?: string
 	bgColor?: string
 	bgColorHover?: string
+	textColorLightMode?: string
+	textColorDarkMode?: string
+	textColorHoverLightMode?: string
+	textColorHoverDarkMode?: string
 	isDisabled?: boolean
 }
 
@@ -116,9 +121,32 @@ export default function DropDown(props: Props) {
 					onClick={(event) => handleOptionOnClick(event, option.value)}
 					title={`${option.value}`}
 					key={`${option.value}_ ${index}`}
-					className={`py-1.5 px-1.5 rounded-md ${clsx(props.bgColor ? props.bgColor : '', props.bgColorHover ? props.bgColorHover : '')}`}
+					className={`py-1.5 px-1.5 rounded-md flex items-center cursor-pointer ${clsx(
+						props.bgColor ? props.bgColor : '',
+						props.bgColorHover ? props.bgColorHover : '',
+						props.textColorLightMode ? props.textColorLightMode : ' text-black',
+						props.textColorDarkMode ? props.textColorDarkMode : 'dark:text-white',
+						props.textColorHoverLightMode ? props.textColorHoverLightMode : 'hover:text-black',
+						props.textColorHoverDarkMode ? props.textColorHoverDarkMode : 'dark:hover:text-white'
+					)}`}
 				>
-					{option.value}
+					{option?.iconLeft && option?.iconLeft}
+					<span className='w-full truncate'>{option.value}</span>
+					{selectedValue === option.value && (
+						<IoIosCheckmarkCircle
+							className={`${clsx(
+								'text-xl',
+								props.bgColor ? props.bgColor : '',
+								props.bgColorHover ? props.bgColorHover : '',
+								props.textColorLightMode ? props.textColorLightMode : ' text-black',
+								props.textColorDarkMode ? props.textColorDarkMode : 'dark:text-white',
+								props.textColorHoverLightMode ? props.textColorHoverLightMode : 'hover:text-black',
+								props.textColorHoverDarkMode
+									? props.textColorHoverDarkMode
+									: 'dark:hover:text-white'
+							)}`}
+						/>
+					)}
 				</li>
 			)
 		})
@@ -148,6 +176,10 @@ export default function DropDown(props: Props) {
 				props.classes,
 				props.bgColor ? props.bgColor : '',
 				props.bgColorHover ? props.bgColorHover : '',
+				props.textColorLightMode ? props.textColorLightMode : ' text-black',
+				props.textColorDarkMode ? props.textColorDarkMode : 'dark:text-white',
+				props.textColorHoverLightMode ? props.textColorHoverLightMode : 'hover:text-black',
+				props.textColorHoverDarkMode ? props.textColorHoverDarkMode : 'dark:hover:text-white',
 				[
 					`${disabledState ? 'cursor-not-allowed' : 'cursor-pointer'}`,
 					`${disabledState && 'opacity-70 dropdownDisabledState'}`,
@@ -165,7 +197,7 @@ export default function DropDown(props: Props) {
 			</span>
 			{getIconRight()}
 			<div
-				className={`dropdownMenuList ${focusState ? 'block' : 'hidden'} absolute w-full h-auto max-h-44 dropdown`}
+				className={`dropdownMenuList ${focusState ? 'block' : 'hidden'} absolute w-full h-auto max-h-96 dropdown`}
 				style={{top: `${height + 10}px`, left: 0, zIndex: 1000, overflow: 'auto'}}
 			>
 				{renderedOptions()}
