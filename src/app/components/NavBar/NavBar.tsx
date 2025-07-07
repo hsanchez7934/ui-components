@@ -12,6 +12,7 @@ const links = [
 	{href: '/button', text: 'Button'},
 	{href: '/checkbox', text: 'Checkbox'},
 	{href: '/dropdown', text: 'Dropdown'},
+	{href: '/pagination', text: 'Pagination'},
 	{href: '/text-input', text: 'Text Input'},
 ]
 
