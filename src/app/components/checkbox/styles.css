@@ -17,12 +17,13 @@
 .custom-checkbox:checked {
 	background-color: #4f46e5;
 	border-color: #4f46e5;
+	color: #fff;
 }
 
 /* Checkmark (✔) when checked */
 .custom-checkbox:checked::after {
 	content: '✔';
-	color: white;
+	color: #fff;
 	font-size: 15px;
 	position: absolute;
 	top: 0;
@@ -37,7 +38,7 @@
 /* Indeterminate (–) visual indicator */
 .custom-checkbox.indeterminate::after {
 	content: '–';
-	color: white;
+	color: #fff;
 	font-size: 15px;
 	position: absolute;
 	top: -1px;
