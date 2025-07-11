@@ -14,6 +14,7 @@ const links = [
 	{href: '/dropdown', text: 'Dropdown'},
 	{href: '/pagination', text: 'Pagination'},
 	{href: '/radio-cards', text: 'Radio Cards'},
+	{href: '/tabs', text: 'Tabs'},
 	{href: '/text-input', text: 'Text Input'},
 ]
 
