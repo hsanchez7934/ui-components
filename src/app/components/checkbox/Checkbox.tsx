@@ -32,30 +32,20 @@ const Checkbox = (props: Props) => {
 			setChecked(true)
 			setIsIndeterminate(false)
 		}
-	}, [])
+	}, [index])
 
 	const handleOnChange = () => {
 		const input = inputRef.current
 		if (index === 0) {
-			// @ts-expect-error generic
-			input.indeterminate = true
-			setCheckboxText('Indeterminate')
 			setIndex(1)
-			setIsIndeterminate(true)
 		}
 		if (index === 1) {
 			// @ts-expect-error generic
 			input.indeterminate = false
-			setChecked(true)
-			setCheckboxText('Checked')
 			setIndex(2)
-			setIsIndeterminate(false)
 		}
 		if (index === 2) {
-			setChecked(false)
-			setCheckboxText('Unchecked')
 			setIndex(0)
-			setIsIndeterminate(false)
 		}
 	}
 
