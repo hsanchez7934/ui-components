@@ -22,7 +22,7 @@
 
 /* Checkmark (✔) when checked */
 .custom-checkbox:checked::after {
-	content: '✔';
+	content: '\2713';
 	color: #fff;
 	font-size: 15px;
 	position: absolute;
