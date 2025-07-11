@@ -1,8 +1,9 @@
-interface Props {
-    children: any
-}
+// interface Props {
+//     children: any
+// }
 
-export default function PaginationComponent(props: Props) {
+// @ts-expect-error generic
+export default function PaginationComponent(props) {
     console.log(props)
     return <div>pagination</div>
 }
