@@ -15,7 +15,7 @@ const RadioCardsPage = () => {
 
 	return (
 		<PageMainBox pageTitle='Radio Card Component'>
-			<div className='w-full p-20'>
+			<div className='w-full pl-20 pr-20 lg:pl-0 lg:pr-0'>
 			<RadioCardGroup
 				name="plan"
 				options={options}
