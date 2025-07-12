@@ -3,7 +3,9 @@ import Toast from '@/app/components/toast/Toast'
 import PageMainBox from '../components/page-main-box/PageMainBox'
 
 const styles = {
-	marginBottom: '20px'
+	marginBottom: '20px',
+	paddingLeft: '20px',
+	paddingRight: '20px'
 }
 
 const App = () => {
