@@ -24,7 +24,7 @@ export const RadioCardGroup: React.FC<RadioCardGroupProps> = ({
 	onChange
 }) => {
 	return (
-		<div className="radio-card-group">
+		<div className="radio-card-group items-center justify-center">
 			{options.map((option) => {
 				const isChecked = selectedValue === option.value
 				return (
