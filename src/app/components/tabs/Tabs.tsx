@@ -20,7 +20,7 @@ export const Tabs: React.FC<TabsProps> = ({tabs, initialIndex = 0}) => {
 				{tabs.map((tab, index) => (
 					<button
 						key={index}
-						className={`tab-heading ${activeIndex === index ? 'active' : ''} p-3 h-full w-[120px] md:w-[150px] lg:w-[170px] xl:w-[190px] text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl`}
+						className={`tab-heading ${activeIndex === index ? 'active' : ''} p-3 h-full w-[120px] md:w-[150px] lg:w-[170px] xl:w-[190px] text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-black dark:text-white`}
 						onClick={() => setActiveIndex(index)}
 					>
 						{tab.label}

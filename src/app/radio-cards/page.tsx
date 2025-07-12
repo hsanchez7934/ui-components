@@ -15,12 +15,14 @@ const RadioCardsPage = () => {
 
 	return (
 		<PageMainBox pageTitle='Radio Card Component'>
+			<div className='p-10 flex justify-center items-center'>
 			<RadioCardGroup
 				name="plan"
 				options={options}
 				selectedValue={selected}
 				onChange={setSelected}
 			/>
+			</div>
 		</PageMainBox>
 	)
 }

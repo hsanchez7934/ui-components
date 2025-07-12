@@ -7,7 +7,6 @@
 .tab-heading {
 	border: none;
 	cursor: pointer;
-	color: #374151;
 	position: relative;
 	transition:
 		color 0.2s ease,
