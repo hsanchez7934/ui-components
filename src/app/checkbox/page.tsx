@@ -20,7 +20,7 @@ const veggies = [
 
 export default function CheckboxPage() {
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Checkbox Component'>
 			<div className="h-auto w-full xl:flex">
 				<section className="flex items-center justify-center flex-col p-7 xl:p-20">
 					<Checkbox index={0} />

@@ -8,9 +8,9 @@ const styles = {
 	paddingRight: '20px'
 }
 
-const App = () => {
+const ToastPage = () => {
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Toast Component'>
 			<div style={styles}>
 				<Toast type="success" message="Your changes have been saved successfully." />
 			</div>
@@ -27,4 +27,4 @@ const App = () => {
 	)
 }
 
-export default App
+export default ToastPage

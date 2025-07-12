@@ -7,13 +7,13 @@ import PageMainBox from '../components/page-main-box/PageMainBox'
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi";
 
-const App = () => {
+const Toggle = () => {
 	const [enabled, setEnabled] = useState(false)
 	const [langEnabled, setLangEnabled] = useState(false)
 	const [onOff, setOnOff] = useState(false)
 
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Toggle Component'>
 			<div className='mb-15'>
 				<ToggleSwitch
 					isOn={onOff}
@@ -52,4 +52,4 @@ const App = () => {
 	)
 }
 
-export default App
+export default Toggle

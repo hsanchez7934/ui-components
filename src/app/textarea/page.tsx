@@ -28,7 +28,7 @@ const TextareaPage = () => {
 	}
 
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Textarea Component'>
 			<div>
 				<Textarea
 					label="Your Bio"

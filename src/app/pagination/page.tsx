@@ -10,7 +10,7 @@ export default function PaginationPage() {
 	const [page2, setPage2] = React.useState(5)
 
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Pagination Component'>
 			<div className='mb-10'>
 			<Pagination
 				totalPages={10}

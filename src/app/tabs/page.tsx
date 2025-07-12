@@ -49,7 +49,7 @@ const TabsPage = () => {
 	]
 
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Tabs Component'>
 			<div>
 				<Tabs tabs={tabItems} />
 			</div>

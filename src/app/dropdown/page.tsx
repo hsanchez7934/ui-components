@@ -142,5 +142,5 @@ export default function DropDownPage() {
 		})
 	}
 
-	return <PageMainBox>{renderedMenus()}</PageMainBox>
+	return <PageMainBox pageTitle='Dropdown Component'>{renderedMenus()}</PageMainBox>
 }

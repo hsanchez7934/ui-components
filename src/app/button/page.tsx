@@ -274,7 +274,7 @@ const renderedBtns = (btns: Btns[]) => {
 
 export default function ButtonsPage() {
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Button Component'>
 			{renderedBtns(primaryBtns)}
 			{renderedBtns(secondaryButtons)}
 			{renderedBtns(tertiaryButtons)}

@@ -72,5 +72,5 @@ export default function TextInputsPage() {
 		})
 	}
 
-	return <PageMainBox>{renderedInputListItem()}</PageMainBox>
+	return <PageMainBox pageTitle='Text Input Component'>{renderedInputListItem()}</PageMainBox>
 }

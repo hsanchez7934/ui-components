@@ -111,7 +111,7 @@ export default function BadgesPage() {
 	}
 
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Badge Component'>
 			{renderedBadges(successBadges)}
 				{renderedBadges(warningBadges)}
 				{renderedBadges(dangerBadges)}

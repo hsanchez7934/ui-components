@@ -7,7 +7,7 @@ import PageMainBox from '../components/page-main-box/PageMainBox'
 
 const TooltipPage = () => {
 	return (
-		<PageMainBox>
+		<PageMainBox pageTitle='Tooltip Component'>
 			<div
 				style={{
 					marginBottom: '25px',
