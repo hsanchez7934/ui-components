@@ -19,6 +19,7 @@ const links = [
 	{href: '/text-input', text: 'Text Input'},
 	{href: '/toast', text: 'Toast'},
 	{href: '/toggle', text: 'Toggle'},
+	{href: '/tooltip', text: 'Tooltip'},
 ]
 
 const renderedLinks = (setToggleNavMenu: (value: boolean) => void) => {
