@@ -13,7 +13,7 @@ import { IoPerson } from "react-icons/io5";
 export default function DropDownPage() {
 	const airlineData = () => {
 		const data = []
-		for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < 5; i++) {
 			data.push({
 				value: faker.airline.airport().iataCode
 			})
@@ -34,7 +34,7 @@ export default function DropDownPage() {
 
 	const foodData = () => {
 		const data = []
-		for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < 6; i++) {
 			data.push({
 				value: faker.food.dish()
 			})
@@ -54,7 +54,7 @@ export default function DropDownPage() {
 
 	const loremIpsumData = () => {
 		const data = []
-		for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < 6; i++) {
 			data.push({
 				value: faker.lorem.sentence()
 			})

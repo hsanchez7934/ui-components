@@ -15,7 +15,7 @@ export const Tabs: React.FC<TabsProps> = ({tabs, initialIndex = 0}) => {
 	const [activeIndex, setActiveIndex] = useState(initialIndex)
 
 	return (
-		<div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[320px] md:w-[400px] md:h-[340px] lg:w-[450px] lg:h-[360px]">
+		<div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[310px] md:w-[400px] md:h-[320px] lg:w-[450px] lg:h-[360px] xl:w-[500px] xl:h-[380px] 2xl:h-[420px]">
 			<div className="tab-headings">
 				{tabs.map((tab, index) => (
 					<button

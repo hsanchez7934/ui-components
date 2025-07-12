@@ -15,8 +15,9 @@ const links = [
 	{href: '/pagination', text: 'Pagination'},
 	{href: '/radio-cards', text: 'Radio Cards'},
 	{href: '/tabs', text: 'Tabs'},
-	{href: '/text-input', text: 'Text Input'},
 	{href: '/textarea', text: 'Textarea'},
+	{href: '/text-input', text: 'Text Input'},
+	{href: '/toast', text: 'Toast'},
 ]
 
 const renderedLinks = (setToggleNavMenu: (value: boolean) => void) => {
