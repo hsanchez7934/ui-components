@@ -18,6 +18,7 @@ const links = [
 	{href: '/textarea', text: 'Textarea'},
 	{href: '/text-input', text: 'Text Input'},
 	{href: '/toast', text: 'Toast'},
+	{href: '/toggle', text: 'Toggle'},
 ]
 
 const renderedLinks = (setToggleNavMenu: (value: boolean) => void) => {

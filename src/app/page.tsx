@@ -15,11 +15,11 @@ export default function Home() {
 					className="text-gray-200 text-center w-[70%] lg:w-[60%] 2xl:w-[40%] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
 					style={{fontFamily: 'Rubik'}}
 				>
-					Here we will preview a collection of reusable components built using React & TailwindCSS.
+					A collection of reusable components built using React & TailwindCSS.
 					Click the button below to get started.
 				</p>
 				<div className='mt-14'>
-					<Link href="/button">
+					<Link href="/badge">
 						<Button
 							buttonType="primary"
 							buttonText="Get Started"
