@@ -14,7 +14,7 @@
 .custom-textarea {
 	resize: vertical;
 	min-height: 200px;
-	width: 300px;
+	width: 100%;
 	font-size: 1rem;
 	padding: 0.75rem;
 	border-radius: 6px;
