@@ -184,17 +184,15 @@ export default function TextInputs(props: Props) {
 			markup = (
 				<div
 					style={{
-						position: 'absolute',
-						right: '0px',
-						top: '0px',
-						height: '100%',
 						color: `${props?.iconColor || '#e6e6e6'}`
 					}}
-					className="w-10 lg:w-12 xl:w-14 2xl:w-16"
+					className={[
+						'absolute right-[10px] top-0 translate-y-[50%]',
+						'text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl',
+						'2xl:right-[50px] 2xl:translate-y-[40%]'
+					].join(' ')}
 				>
-					<div className="flex items-center justify-center h-full w-full text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-						{props.iconRight}
-					</div>
+					{props.iconRight}
 				</div>
 			)
 		}
@@ -225,8 +223,12 @@ export default function TextInputs(props: Props) {
 				/>
 				{getIconRight()}
 			</div>
-			{props?.hintText && <p className={`text-neutral-400 ${getTextSize(inputSize)} pt-1.5`}>{props.hintText}</p>}
-			{props?.errorText && <p className={`text-red-600 ${getTextSize(inputSize)} pt-1.5`}>{props.errorText}</p>}
+			{props?.hintText && (
+				<p className={`text-neutral-400 ${getTextSize(inputSize)} pt-1.5`}>{props.hintText}</p>
+			)}
+			{props?.errorText && (
+				<p className={`text-red-600 ${getTextSize(inputSize)} pt-1.5`}>{props.errorText}</p>
+			)}
 			<div></div>
 		</div>
 	)
